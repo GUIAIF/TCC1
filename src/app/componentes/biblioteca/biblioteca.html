@@ -1,0 +1,34 @@
+<main>
+     <header class="header">
+    <!-- Ícone voltar (para a home) -->
+    <div>
+        <i class="bi bi-book fs-1 text-success"></i>
+    </div>
+
+    <form [formGroup]="form">
+        <select formControlName="destino">
+            <option value="/mapas-biblioteca/Biblioteca.jpg">Selecione o destino</option>
+            <option value="/mapas-biblioteca/ida-biblioteca.jpg">Biblioteca</option>
+            <option value="/mapas-biblioteca/ida-lab3.jpg">Laboratório informática 3</option>
+            <option value="/mapas-biblioteca/ida-lab4.jpg">Laboratório informática 4</option>
+            <option value="/mapas-biblioteca/ida-mapatatil.jpg">Mapa Tátil</option>
+            <option value="/mapas-biblioteca/ida-servicosocial.jpg">Serviço Social</option>
+            <option value="/mapas-biblioteca/ida-setorsaude.jpg">Setor de Saúde</option>
+        </select>
+    </form>
+     <!-- Ícone imagem -->
+    <a href="#" class="icon-btn">
+      <img src="/GUIAIFC.png" alt="Info">
+    </a>
+  </header>
+
+    <section class="mapa">
+        <img [src]="imagemSelecionada" alt="Mapa do setor">
+    </section>
+
+    <footer>
+        <div class="footer-content">
+        <p class="footer-assinatura text-white">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+        </div>
+    </footer>
+</main>

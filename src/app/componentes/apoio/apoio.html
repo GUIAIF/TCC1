@@ -1,0 +1,44 @@
+<main>
+     <header class="header">
+    <!-- Ícone voltar (para a home) -->
+    <div>
+        <i class="bi bi-key fs-1 text-success"></i>
+    </div>
+
+    <form [formGroup]="form">
+        <select formControlName="destino">
+            <option value="/mapas-apoio/apoio.jpg">Selecione o destino</option>
+            <option value="/mapas-apoio/ida-apoioacad.jpg">Apoio Acadêmico</option>
+            <option value="/mapas-apoio/ida-sala01.jpg">A-1</option>
+            <option value="/mapas-apoio/ida-sala02.jpg">A-2</option>
+            <option value="/mapas-apoio/ida-sala03.jpg">A-3</option>
+            <option value="/mapas-apoio/ida-sala04.jpg">A-4</option>
+            <option value="/mapas-apoio/ida-sala05.jpg">A-5</option>
+            <option value="/mapas-apoio/ida-sala06.jpg">A-6</option>
+            <option value="/mapas-apoio/ida-sala07.jpg">A-7</option>
+            <option value="/mapas-apoio/ida-sala08.jpg">A-8</option>
+            <option value="/mapas-apoio/ida-sala09.jpg">A-9</option>
+            <option value="/mapas-apoio/ida-sala10.jpg">A-10</option>  
+            <option value="/mapas-apoio/ida-labs.jpg">Laboratórios</option>
+            <option value="/mapas-apoio/ida-labfisica.jpg">Lab de Física</option>
+            <option value="/mapas-apoio/ida-labquimica.jpg">Lab de Química</option>
+            <option value="/mapas-apoio/ida-wcpdfem.jpg">WC PCD Feminino</option>
+            <option value="/mapas-apoio/ida-wcpdmas.jpg">WC PCD Masculino</option>
+        </select>
+    </form>
+     <!-- Ícone imagem -->
+    <a href="#" class="icon-btn">
+      <img src="/GUIAIFC.png" alt="Info">
+    </a>
+  </header>
+
+    <section class="mapa">
+        <img [src]="imagemSelecionada" alt="Mapa do setor">
+    </section>
+
+    <footer>
+        <div class="footer-content">
+        <p class="footer-assinatura text-white">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+        </div>
+    </footer>
+</main>

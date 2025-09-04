@@ -1,0 +1,47 @@
+<main>
+     <header class="header">
+    <!-- Ícone voltar (para a home) -->
+    <div>
+        <i class="bi bi-building fs-1 text-success"></i>
+    </div>
+    <form [formGroup]="form">
+        <select formControlName="destino">
+            <option value="/mapas-anexo/Anexo.jpg">Selecione o destino</option>
+            <option value="/mapas-anexo/Coord. De Lab..jpg">Coord. de Lab.</option>
+            <option value="/mapas-anexo/CVT Espacial.jpg">CVT Espacial</option>
+            <option value="/mapas-anexo/Lab. Desenho Técnico.jpg">Lab. Desenho Técnico</option>
+            <option value="/mapas-anexo/Laboratório de ensino híbrido.jpg">Lab. de Ensino Híbrido</option>
+            <option value="/mapas-anexo/Lab. Instalações Elétricas.jpg">Lab. Instalações Elétricas</option>
+            <option value="/mapas-anexo/Lab. De Línguas.jpg">Lab. de Línguas</option>
+            <option value="/mapas-anexo/Lab. Para Pesquisadores.jpg">Lab. para Pesquisadores</option>
+            <option value="/mapas-anexo/Lab. Projetos.jpg">Lab. de Projetos</option>
+            <option value="/mapas-anexo/Lab. Química.jpg">Lab. de Química</option>
+            <option value="/mapas-anexo/Nocs Lab.jpg">NOCS Lab.</option>
+            <option value="/mapas-anexo/Salas de atendimento a alunos.jpg">Sala de Atendimento ao Aluno 1</option>
+            <option value="/mapas-anexo/Salas de atendimento a alunos 2.jpg">Sala de Atendimento ao Aluno 2</option>
+            <option value="/mapas-anexo/Sala B-12.jpg">Sala B-12</option>
+            <option value="/mapas-anexo/Sala B-13.jpg">Sala B-13</option>
+            <option value="/mapas-anexo/Sala B-14.jpg">Sala B-14</option>
+            <option value="/mapas-anexo/Sala B-15.jpg">Sala B-15</option>
+            <option value="/mapas-anexo/Sala B-16.jpg">Sala B-16</option>
+            <option value="/mapas-anexo/Sala de Reuniões.jpg">Sala de Reuniões</option>
+            <option value="/mapas-anexo/Banheiro Feminino.jpg">WC PCD Feminino</option>
+            <option value="/mapas-anexo/Banheiro Masculino.jpg">WC PCD Masculino</option>
+        </select>
+    </form>
+     <!-- Ícone imagem -->
+    <a href="#" class="icon-btn">
+      <img src="/GUIAIFC.png" alt="Info">
+    </a>
+  </header>
+
+    <section class="mapa">
+        <img [src]="imagemSelecionada" alt="Mapa do setor">
+    </section>
+
+    <footer>
+        <div class="footer-content">
+        <p class="footer-assinatura text-white">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+        </div>
+    </footer>
+</main>

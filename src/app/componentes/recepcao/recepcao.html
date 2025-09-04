@@ -1,0 +1,38 @@
+<main>
+     <header class="header">
+    <!-- Ícone voltar (para a home) -->
+    <div>
+        <i class="bi bi-person-workspace fs-1 text-success"></i>
+    </div>
+
+    <form [formGroup]="form">
+        <select formControlName="destino">
+            <option value="/mapas-recepcao/Principal.jpg">Selecione o destino</option>
+            <option value="/mapas-recepcao/Auditorio.jpg">Auditório</option>
+            <option value="/mapas-recepcao/Direção.jpg">Direção Geral</option>
+            <option value="/mapas-recepcao/Mapa-Tátil.jpg">Mapa Tátil</option>
+            <option value="/mapas-recepcao/Recepção.jpg">Recepção</option>
+            <option value="/mapas-recepcao/Sala-professores.jpg">Sala dos professores</option>
+            <option value="/mapas-recepcao/Secretaria.jpg">Secretária Acadêmica</option>
+            <option value="/mapas-recepcao/Banheiro-f.jpg">WC Feminino</option>
+            <option value="/mapas-recepcao/Banheiro-m.jpg">WC Masculino</option>
+            <option value="/mapas-recepcao/Banheiro-pcd-f.jpg">WC PCD Feminino</option>
+            <option value="/mapas-recepcao/Banheiro-pcd-m.jpg">WC PCD Masculino</option>
+        </select>
+    </form>
+     <!-- Ícone imagem -->
+    <a href="#" class="icon-btn">
+      <img src="/GUIAIFC.png" alt="Info">
+    </a>
+  </header>
+
+    <section class="mapa">
+        <img [src]="imagemSelecionada" alt="Mapa do setor">
+    </section>
+
+<footer>
+    <div class="footer-content">
+        <p class="footer-assinatura text-white">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+    </div>
+</footer>
+</main>

@@ -1,0 +1,50 @@
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo-guiaif.png" alt="Logo IF" class="logo-img">
+        </div>
+        <!-- <h1>GUIA IF</h1> -->
+        <p class="subtitle">Encontre o seu lugar no IF</p>
+    </div>
+</header>
+
+<main class="container">
+    <div class="menu-grid">
+        <div class="menu-item text-center" routerLink="/recepcao">
+            <i class="bi bi-person-workspace fs-1 text-success"></i>
+            <h2 class="text-success">Recepção</h2>
+        </div>
+
+        <div class="menu-item text-center" routerLink="/biblioteca">
+            <i class="bi bi-book fs-1 text-success"></i>
+            <h2 class="text-success">Biblioteca</h2>
+        </div>
+
+        <div class="menu-item text-center" routerLink="/apoio">
+            <i class="bi bi-key fs-1 text-success"></i>
+            <h2 class="text-success">Apoio</h2>
+        </div>
+
+        <div class="menu-item text-center" routerLink="/anexo">
+            <i class="bi bi-building fs-1 text-success"></i>
+            <h2 class="text-success">Anexo</h2>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="footer-content">
+        <p>Sistema de acessibilidade e navegação para o campus Parnamirim</p>
+        <div class="accessibility-options">
+            <button class="accessibility-btn" (click)="toggleTheme()">
+                <i *ngIf="!isDark" class="bi bi-moon-fill text-dark"></i>
+                <i *ngIf="isDark" class="bi bi-sun-fill text-warning"></i>
+            </button>
+            <button class="accessibility-btn" id="read-page" title="Ler página">
+                <i class="bi bi-book-half text-success "></i></button>
+        </div>
+        <p class="footer-assinatura">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+    </div>
+</footer>
