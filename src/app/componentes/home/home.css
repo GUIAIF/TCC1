@@ -3,7 +3,7 @@
   --bg-main: #ffffff;
   --bg-footer: rgb(3, 58, 30);
 
-  --text-main: #000000;
+  --text-main: #e7e7e7;
   --text-subtitle: #ffffff;
   --text-title: rgb(30, 155, 30);
 
@@ -61,7 +61,8 @@ main {
 }
 
 .logo-img {
-  width: 50%;   /* ajuste o tamanho conforme necessário */
+  width: 180px;   
+  max-width: 60%;
   height: auto;
   margin-bottom: 0;
 }
@@ -93,7 +94,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   width: 100%;
-  max-width: 600px;
+  max-width: 699px;
   margin: 0 auto;
 }
 
@@ -101,7 +102,7 @@ main {
   background: var(--card-bg);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px  var(--card-shadow);;
+  box-shadow: 0 4px 10px var(--card-shadow);
   text-align: center;
   transition: 0.3s;
 }
@@ -112,17 +113,17 @@ main {
 }
 
 .menu-item h2 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   margin-bottom: 8px;
-  color: var(--text-title);;
+  color: var(--text-title);
 }
 
 /* Footer */
 footer {
   background: var(--bg-footer);
-  color:  var(--text-main);
+  color: var(--text-main);
   text-align: center;
-  padding: 8px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .footer-content {
@@ -143,6 +144,8 @@ footer {
   margin-bottom: 20px;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap; /* se não couber, quebra linha */
+  justify-content: center;
 }
 
 .accessibility-btn {
@@ -158,4 +161,65 @@ footer {
 
 .accessibility-btn:hover {
    background: var(--btn-hover);
+}
+
+/* ===================== */
+/* RESPONSIVIDADE        */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .menu-grid {
+    max-width: 600px;
+  }
+
+  header .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares médios */
+@media (max-width: 600px) {
+  .logo-img {
+    width: 140px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr; /* apenas 1 por linha */
+  }
+
+  .menu-item {
+    padding: 16px;
+  }
+
+  .menu-item h2 {
+    font-size: 1.1rem;
+  }
+
+  header {
+    padding: 15px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 400px) {
+  .logo-img {
+    width: 120px;
+  }
+
+  header .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .menu-item {
+    padding: 12px;
+  }
+
+  .menu-item h2 {
+    font-size: 1rem;
+  }
+
+  .accessibility-btn {
+    padding: 10px 12px;
+  }
 }
