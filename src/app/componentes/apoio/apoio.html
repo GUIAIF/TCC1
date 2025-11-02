@@ -1,0 +1,80 @@
+<main>
+  <header class="header">
+    <div>
+      <i class="bi bi-key fs-1 text-success"></i>
+    </div>
+
+    <form [formGroup]="form">
+      <select formControlName="destino">
+        <option value="">Selecione o destino</option>
+        <option value="/mapas-apoio/ida-sala01.jpg">A-1</option>
+        <option value="/mapas-apoio/ida-sala02.jpg">A-2</option>
+        <option value="/mapas-apoio/ida-sala03.jpg">A-3</option>
+        <option value="/mapas-apoio/ida-sala04.jpg">A-4</option>
+        <option value="/mapas-apoio/ida-sala05.jpg">A-5</option>
+        <option value="/mapas-apoio/ida-sala06.jpg">A-6</option>
+        <option value="/mapas-apoio/ida-sala07.jpg">A-7</option>
+        <option value="/mapas-apoio/ida-sala08.jpg">A-8</option>
+        <option value="/mapas-apoio/ida-sala09.jpg">A-9</option>
+        <option value="/mapas-apoio/ida-sala10.jpg">A-10</option>
+        <option value="/mapas-apoio/ida-labs.jpg">Laboratórios</option>
+        <option value="/mapas-apoio/ida-labfisica.jpg">Lab de Física</option>
+        <option value="/mapas-apoio/ida-labbiologia.jpg">Lab de Biologia</option>
+        <option value="/mapas-apoio/ida-wcpdfem.jpg">WC PCD Feminino</option>
+        <option value="/mapas-apoio/ida-wcpdmas.jpg">WC PCD Masculino</option>
+      </select>
+    </form>
+
+    <a href="#" class="icon-btn">
+      <i class="bi bi-house-door fs-1 text-success"></i>
+    </a>
+  </header>
+
+  <section class="mapa">
+    <img *ngIf="imagemSelecionada" [src]="imagemSelecionada" alt="Mapa do Apoio Acadêmico">
+  </section>
+
+    <div class="Contador" *ngIf="instrucoes.length > 0">
+    <!-- Botão play -->
+    <button (click)="narrarProximoPasso()" style="background: none; border: none; cursor: pointer;">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+            width="40" height="40" 
+            class="bi bi-play-fill " 
+            viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+          fill="green"/>
+      </svg>
+    </button>
+
+    <button class="Reiniciar" (click)="reiniciarRota()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-counterclockwise text-success" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/>
+</svg>
+
+</button>
+
+<div class="progress-bar">
+  <div class="progress" [style.width.%]="(passoAtual / instrucoes.length) * 100"></div>
+</div>
+</div>
+
+<!-- Botão de ajuda flutuante -->
+<button class="ajuda-botao bi bi-info fs-1 text-light" (click)="mostrarAjuda = !mostrarAjuda"></button>
+
+<!-- Janela de ajuda -->
+<div *ngIf="mostrarAjuda" class="ajuda-caixa">
+  <h3 class="bi bi-lightbulb text-warning"> Como usar o mapa</h3>
+  <p>• No ícone 🏠(Home), você volta para a página inicial.</p>
+  <p>• No ícone "Selecione o destino", você pode escolher o local do anexo para onde deseja ir.</p>
+  <p>• Após selecionar o destino, o mapa será exibido com o ícone ▶ (Play), onde uma voz irá narrar o trajeto passo a passo.</p>
+  <p>• O ícone 🔄 (Reiniciar) serve para reiniciar a rota e começar novamente.</p>
+
+</div>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-assinatura text-white">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+    </div>
+  </footer>
+</main>
