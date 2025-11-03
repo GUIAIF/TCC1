@@ -24,28 +24,28 @@ export class Biblioteca implements OnInit {
   // Rotas partindo da BIBLIOTECA
   rotas: { [key: string]: string[] } = {
     'Laboratório informática 3': [
-      'Você está no Mapa Tátil da biblioteca.',
-      'Dê 12 passos para a direita',
+      'Você está no Mapa Tátil da biblioteca, clique para continuar',
+      'Dê 12 passos para a direita, clique para continuar',
       'Dê 33 passos para a esquerda e você chegará ao Laboratório de Informática 3.'
     ],
     'Laboratório informática 4': [
-      'Você está no Mapa Tátil da biblioteca.',
-      'Dê 12 passos para a direita',
+      'Você está no Mapa Tátil da biblioteca, clique para continuar',
+      'Dê 12 passos para a direita, clique para continuar',
       'Dê 27 passos para a esquerda e você chegará ao Laboratório de Informática 4.'
     ],
     'Mapa Tátil': [
-      'Você está no Mapa Tátil da biblioteca.',
-      'Dê 12 passos para a direita',
-      'Dê 30 passos para a esquerda',
+      'Você está no Mapa Tátil da biblioteca, clique para continuar',
+      'Dê 12 passos para a direita, clique para continuar',
+      'Dê 30 passos para a esquerda, clique para continuar',
       'Dê 22 passos para a esquerda e você chegará ao Mapa Tátil do Apoio.'
     ],
     'Serviço Social': [
-      'Você está no Mapa Tátil da biblioteca.',
-      'Dê 12 passos para a direita',
+      'Você está no Mapa Tátil da biblioteca, clique para continuar',
+      'Dê 12 passos para a direita, clique para continuar',
       'Dê 3 passos para a esquerda e você chegará ao Serviço Social.'
     ],
     'Biblioteca': [
-      'Você está no Mapa Tátil da biblioteca.',
+      'Você está no Mapa Tátil da biblioteca, clique para continuar',
       'Dê 7 passos para a direita e você chegará na Biblioteca.'
     ]
   };

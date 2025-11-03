@@ -23,77 +23,77 @@ export class Apoio implements OnInit {
   // Rotas partindo do Apoio Acadêmico
   rotas: { [key: string]: string[] } = {
     'A-1': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
       'Dê 12 passos para a esquerda e você chegará à sala A-1.'
     ],
     'A-2': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 12 passos para a esquerda.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 12 passos para a esquerda, clique para continuar',
       'Dê 12 passos para a direita e você chegará à sala A-2.'
     ],
     'A-3': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 12 passos para a esquerda.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 12 passos para a esquerda, clique para continuar',
       'Dê 14 passos para a direita e você chegará à sala A-3.'
     ],
     'A-4': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 12 passos para a esquerda.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 12 passos para a esquerda, clique para continuar',
       'Dê 39 passos para a direita e você chegará à sala A-4.'
     ],
     'A-5': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 12 passos para a esquerda.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 12 passos para a esquerda, clique para continuar',
       'Dê 41 passos para a direita e você chegará à sala A-5.'
     ],
     'A-6': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 22 passos para a direita',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 22 passos para a direita, clique para continuar',
       'Dê 41 passos para a esquerda e você chegará à sala A-6.'
     ],
     'A-7': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 22 passos para a direita',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 22 passos para a direita, clique para continuar',
       'Dê 39 passos para a esquerda e você chegará à sala A-7.'
     ],
     'A-8': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 22 passos para a direita',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 22 passos para a direita, clique para continuar',
       'Dê 14 passos para a esquerda e você chegará à sala A-8.'
     ],
      'A-9': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 22 passos para a direita',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 22 passos para a direita, clique para continuar',
       'Dê 12 passos para a esquerda e você chegará à sala A-9.'
     ],
     'A-10': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
       'Dê 22 passos para a direita e você chegará à sala A-10.'
     ],
     'Laboratórios': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 12 passos para a esquerda.',
-      'Dê 39 passos para a direita',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 12 passos para a esquerda, clique para continuar',
+      'Dê 39 passos para a direita, clique para continuar',
       'Dê 2 passos para a direita e você chegará ao Corredor dos Laboratórios.'
 
     ],
     'Lab de Física': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
       'Dê 12 passos para a direita e você chegará ao Laboratório de Física.',
       
     ],
     'Lab de Biologia': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
       'Dê 14 passos para a direita e você chegará ao Laboratório de Biologia.',
     ],
     'WC PCD Feminino': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 12 passos para a esquerda.',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 12 passos para a esquerda, clique para continuar',
       'Dê 12 passos para a direita e você chegará ao banheiro PCD Feminino.'
     ],
     'WC PCD Masculino': [
-      'Você está no Mapa Tátil do Apoio Acadêmico.',
-      'Dê 22 passos para a direita',
+      'Você está no Mapa Tátil do Apoio Acadêmico, clique para continuar',
+      'Dê 22 passos para a direita, clique para continuar',
       'Dê 12 passos para a esquerda e você chegará ao banheiro PCD Masculino.'
     ],
   };

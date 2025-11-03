@@ -26,135 +26,115 @@ export class Anexo implements OnInit {
   // Rotas partindo do ANEXO
   rotas: { [key: string]: string[] } = {
     'Coord. de Lab.': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
       'Dê 40 passos para a direita e você chegará à Coordenação de Laboratórios.'
 
     ],
     'CVT Espacial': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar',
       'Dê 39 passos à esquerda e você encontrará o CVT Espacial.'
     ],
     'Lab. Desenho Técnico': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
-      'Dê 41 passos à esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar',
+      'Dê 41 passos à esquerda, clique para continuar',
       'Dê 4 passos à esquerda e você chegará ao Laboratório de Desenho Técnico.'
     ],
     'Lab. de Ensino Híbrido': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
       'Dê 21 passos para a esquerda e você chegará ao Laboratório de Ensino Híbrido.'
     ],
     'Lab. Instalações Elétricas': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
-      'Dê 41 passos à esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar.',
+      'Dê 41 passos à esquerda, clique para continuar',
       'Dê 21 passos à esquerda e você chegará ao Laboratório de Instalações Elétricas.'
     ],
     'Lab. de Línguas': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar',
       'Dê 8 passos à esquerda e você chegará ao Laboratório de Línguas.'
     ],
     'Lab. para Pesquisadores': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
       'Dê 28 passos para a direita e você chegará ao Laboratório para Pesquisadores.'
     ],
     'Lab. de Projetos': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
-      'Dê 40 passos para a direita',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
+      'Dê 40 passos para a direita, clique para continuar',
       'Dê 4 passos para a esquerda e você chegará ao Laboratório de Projetos.'
     ],
     'Lab. de Química': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
-      'Dê 40 passos para a direita',
-      'Dê 21 passos para a direita',
-      'Dê 13 passos para a esquerda',
-      'Dê 4 passos para a direita',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
+      'Dê 40 passos para a direita, clique para continuar',
+      'Dê 21 passos para a direita, clique para continuar',
+      'Dê 13 passos para a esquerda, clique para continuar',
+      'Dê 4 passos para a direita, clique para continuar',
       'Dê 4 passos para a direita novamente e você chegará ao Laboratório de Química.'
     ],
     'NOCS Lab.': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar',
       'Dê 28 passos à esquerda e você chegará ao NOCS Lab.'
     ],
     'Sala de Atendimento ao Aluno 1': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
       'Dê 12 passos para à direita e você chegará á primeira Sala de Atendimento ao Aluno.'
     ],
     'Sala de Atendimento ao Aluno 2': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
       'Dê 16 passos para a esquerda e você chegará á segunda Sala de Atendimento ao Aluno.'
     ],
     'Sala B-12': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
       'Dê 9 passos para a direita e você chegará à sala B-12.'
     ],
     'Sala B-13': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
       'Dê 26 passos para a direita e você chegará à sala B-13.'
     ],
     'Sala B-14': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar',
       'Dê 26 passos à esquerda e você chegará à sala B-14.'
     ],
     'Sala B-15': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 14 passos à direita.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 14 passos à direita, clique para continuar',
       'Dê 9 passos à esquerda e você chegará à sala B-15.'
     ],
     'Sala B-16': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
       'Dê 14 passos à direita e você chegará à sala B-16.'
     ],
     'Sala de Reuniões': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
       'Dê 8 passos para a direita e você chegará à Sala de Reuniões.'
     ],
     'WC PCD Feminino': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
-      'Dê 40 passos para a direita',
-      'Dê 21 passos para a direita',
-      'Dê 13 passos para a esquerda',
-      'Dê 14 passos para a esquerda',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
+      'Dê 40 passos para a direita, clique para continuar',
+      'Dê 21 passos para a direita, clique para continuar',
+      'Dê 13 passos para a esquerd, clique para continuar',
+      'Dê 14 passos para a esquerda, clique para continuar',
       'Dê 2 passos para a direita e você chegará ao banheiro PCD Feminino.'
     ],
     'WC PCD Masculino': [
-      'Você está no Mapa Tátil do Anexo.',
-      'Dê 2 passos para esquerda',
-      'Dê 21 passos para a esquerda.',
-      'Dê 40 passos para a direita',
-      'Dê 21 passos para a direita',
-      'Dê 13 passos para a esquerda',
-      'Dê 4 passos para a direita',
+      'Dê 2 passos para esquerda, clique para continuar',
+      'Dê 21 passos para a esquerda, clique para continuar',
+      'Dê 40 passos para a direita, clique para continuar',
+      'Dê 21 passos para a direita, clique para continuar',
+      'Dê 13 passos para a esquerda, clique para continuar',
+      'Dê 4 passos para a direita, clique para continuar',
       'Dê 7 passos para a esquerda e você chegará ao banheiro PCD Masculino.'
     ],
   };

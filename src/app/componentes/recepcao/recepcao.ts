@@ -23,62 +23,62 @@ export class Recepcao implements OnInit {
 
   rotas: { [key: string]: string[] } = {
     'Auditório': [
-      'Você está no mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda.',
+      'Você está no mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
       'Dê 12 passos para esquerda e você chegará ao auditório.',
     ],
     'WC Masculino': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
-      'Dê 12 passos para esquerda.',
-      'Dê 39 passos para a direita',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
+      'Dê 12 passos para esquerda, clique para continuar',
+      'Dê 39 passos para a direita, clique para continuar',
       'Dê 4 passos para a esquerda e você chegará ao banheiro masculino.'
 
     ],
     'WC Feminino': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
-      'Dê 12 passos para esquerda.',
-      'Dê 39 passos para a direita',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
+      'Dê 12 passos para esquerda, clique para continuar',
+      'Dê 39 passos para a direita, clique para continuar',
       'Dê 6 passos para a esquerda e você chegará ao banheiro feminino.'
     ],
     'WC PCD Masculino': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
-      'Dê 12 passos para esquerda.',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
+      'Dê 12 passos para esquerda, clique para continuar',
       'Dê 26 passos para a direita e você chegará ao banheiro PCD masculino.'
 
     ],
     'WC PCD Feminino': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
-      'Dê 12 passos para esquerda.',
-      'Dê 39 passos para a direita',
-      'Dê 9 passos para a esquerda',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
+      'Dê 12 passos para esquerda, clique para continuar',
+      'Dê 39 passos para a direita, clique para continuar',
+      'Dê 9 passos para a esquerda, clique para continuar',
       'Dê 13 passos para a esquerda e você chegará ao banheiro PCD feminino.'
       
     ],
     'Sala dos Professores': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
-      'Dê 12 passos para esquerda.',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
+      'Dê 12 passos para esquerda, clique para continuar',
       'Dê 10 passos para a direita e você chegará à sala dos professores.'
     ],
     'Mapa Tátil': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
-      'Dê 12 passos para esquerda.',
-      'Dê 39 passos para a direita',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
+      'Dê 12 passos para esquerda, clique para continuar',
+      'Dê 39 passos para a direit, clique para continuar',
       'Dê 3 passos para a direita e você chegará ao Mapa Tátil da Biblioteca.'
     ],
     'Secretaria Acadêmica': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
       'Dê 5 passos para a direita e você chegará à Secretaria Acadêmica.'
     ],
     'Direção Geral': [
-      'Você está no Mapa Tátil da recepção.',
-      'Dê 4 passos para esquerda',
+      'Você está no Mapa Tátil da recepção, clique para continuar',
+      'Dê 4 passos para esquerda, clique para continuar',
       'Dê 6 passos para a direita e você chegará à Direção Geral.'
     ],
     'Recepção': [
