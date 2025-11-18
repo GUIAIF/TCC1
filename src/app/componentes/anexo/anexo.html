@@ -1,0 +1,84 @@
+<main>
+  <header class="header">
+    <div>
+      <i class="bi bi-building fs-1 text-success"></i>
+    </div>
+
+    <form [formGroup]="form">
+      <select formControlName="destino">
+        <option value="">Selecione o destino</option>
+        <option value="/mapas-anexo/Coord. De Lab.jpg">Coord. de Lab.</option>
+        <option value="/mapas-anexo/CVT Espacial.jpg">CVT Espacial</option>
+        <option value="/mapas-anexo/Lab. Desenho Técnico.jpg">Lab. Desenho Técnico</option>
+        <option value="/mapas-anexo/Laboratório de ensino híbrido.jpg">Lab. de Ensino Híbrido</option>
+        <option value="/mapas-anexo/Lab. Instalações Elétricas.jpg">Lab. Instalações Elétricas</option>
+        <option value="/mapas-anexo/Lab. De Línguas.jpg">Lab. de Línguas</option>
+        <option value="/mapas-anexo/Lab. Para Pesquisadores.jpg">Lab. para Pesquisadores</option>
+        <option value="/mapas-anexo/Lab. Projetos.jpg">Lab. de Projetos</option>
+        <option value="/mapas-anexo/Lab. Química.jpg">Lab. de Química</option>
+        <option value="/mapas-anexo/Nocs Lab.jpg">NOCS Lab.</option>
+        <option value="/mapas-anexo/Salas de atendimento a alunos.jpg">Sala de Atendimento ao Aluno 1</option>
+        <option value="/mapas-anexo/Salas de atendimento a alunos 2.jpg">Sala de Atendimento ao Aluno 2</option>
+        <option value="/mapas-anexo/Sala B-12.jpg">Sala B-12</option>
+        <option value="/mapas-anexo/Sala B-13.jpg">Sala B-13</option>
+        <option value="/mapas-anexo/Sala B-14.jpg">Sala B-14</option>
+        <option value="/mapas-anexo/Sala B-15.jpg">Sala B-15</option>
+        <option value="/mapas-anexo/Sala B-16.jpg">Sala B-16</option>
+        <option value="/mapas-anexo/Sala de Reuniões.jpg">Sala de Reuniões</option>
+        <option value="/mapas-anexo/Banheiro Feminino.jpg">WC PCD Feminino</option>
+        <option value="/mapas-anexo/Banheiro Masculino.jpg">WC PCD Masculino</option>
+      </select>
+    </form>
+
+    <a href="#" class="icon-btn">
+      <i class="bi bi-house-door fs-1 text-success"></i>
+    </a>
+  </header>
+
+  <section class="mapa">
+    <img *ngIf="imagemSelecionada" [src]="imagemSelecionada" alt="Mapa do Anexo">
+  </section>
+
+    <div class="Contador" *ngIf="instrucoes.length > 0">
+    <button (click)="narrarProximoPasso()" style="background: none; border: none; cursor: pointer;">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+            width="40" height="40" 
+            class="bi bi-play-fill text-success" 
+            viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+          fill="green"/>
+      </svg>
+    </button>
+
+    <button class="Reiniciar" (click)="reiniciarRota()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-counterclockwise text-success" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466" fill="green"/>
+</svg>
+
+</button>
+
+<div class="progress-bar">
+  <div class="progress" [style.width.%]="(passoAtual / instrucoes.length) * 100"></div>
+</div>
+</div>
+
+<!-- Botão de ajuda flutuante -->
+<button class="ajuda-botao bi bi-info fs-1 text-light" (click)="mostrarAjuda = !mostrarAjuda"></button>
+
+<!-- Janela de ajuda -->
+<div *ngIf="mostrarAjuda" class="ajuda-caixa">
+  <h3 class="bi bi-lightbulb text-warning"> Como usar o mapa</h3>
+  <p>• No ícone 🏠(Home), você volta para a página inicial.</p>
+  <p>• No ícone "Selecione o destino", você pode escolher o local do anexo para onde deseja ir.</p>
+  <p>• Após selecionar o destino, o mapa será exibido com o ícone ▶ (Play), onde uma voz irá narrar o trajeto passo a passo.</p>
+  <p>• O ícone 🔄 (Reiniciar) serve para reiniciar a rota e começar novamente.</p>
+
+</div>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-assinatura text-white">GuiaIF &copy; 2025 - Instituto Federal do Rio Grande do Norte</p>
+    </div>
+  </footer>
+</main>
