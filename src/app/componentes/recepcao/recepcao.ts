@@ -68,7 +68,7 @@ export class Recepcao implements OnInit {
       'Você está no Mapa Tátil da recepção, clique para continuar',
       'Dê 4 passos para esquerda, clique para continuar',
       'Dê 12 passos para esquerda, clique para continuar',
-      'Dê 39 passos para a direit, clique para continuar',
+      'Dê 39 passos para a direita, clique para continuar',
       'Dê 3 passos para a direita e você chegará ao Mapa Tátil da Biblioteca.'
     ],
     'Secretaria Acadêmica': [
